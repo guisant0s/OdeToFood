@@ -13,7 +13,7 @@ namespace OdeToFood
 
             routes.MapRoute("Cuisine",
                 "cuisine/{name}",
-                new { controller = "Cuisine", action = "Search", name = "" });
+                new { controller = "Cuisine", action = "Search", name = UrlParameter.Optional });
 
             routes.MapRoute(
                 name: "Default",
